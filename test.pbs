@@ -1,0 +1,41 @@
+#!/bin/bash
+#PBS -N test
+#PBS -l nodes=1:ppn=16
+#PBS -q AM030_queue
+#PBS -j oe
+#################################################
+#  File Name: test.pbs
+#  
+#  Author: zhengdongjian@tju.edu.cn
+#  
+#  Created Time: Fri, May 20, 2016  6:43:26 PM
+#  
+#################################################
+
+if [ "$PBS_O_WORKDIR" != "" ]; then
+    cd $PBS_O_WORKDIR
+fi
+
+N=100000
+RPT=20 #repeat time
+out="stdout.txt"
+err="stderr.txt"
+
+calc() {
+    awk "BEGIN { print "$*" }"
+}
+
+echo -n '' > $out
+echo -n '' > $err
+
+while [ $N -le 10000000 ]; do
+    thread_num=1
+    while [ $thread_num -le 64 ]; do
+        sum=0
+        i=0
+        echo "N = $N, thread_num = $thread_num:" >> $out
+        ./pi $thread_num $N $thread_num $RPT >> $out 2>> $err
+        thread_num=`calc "$thread_num*2"`
+    done
+    N=$(($N * 10))
+done

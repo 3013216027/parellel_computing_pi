@@ -1,0 +1,42 @@
+N = 100000, thread_num = 1:
+get π = 4.430769230769231, avarage time used = 3.002000 ms
+N = 100000, thread_num = 2:
+get π = 3.942840746054519, avarage time used = 2.503000 ms
+N = 100000, thread_num = 4:
+get π = 3.588179828738770, avarage time used = 2.501250 ms
+N = 100000, thread_num = 8:
+get π = 3.377757114912789, avarage time used = 2.148000 ms
+N = 100000, thread_num = 16:
+get π = 3.263072930579265, avarage time used = 2.376813 ms
+N = 100000, thread_num = 32:
+get π = 3.203205099773984, avarage time used = 2.443656 ms
+N = 100000, thread_num = 64:
+get π = 3.172619811662286, avarage time used = 2.311781 ms
+N = 1000000, thread_num = 1:
+get π = 4.430769230769231, avarage time used = 2.503000 ms
+N = 1000000, thread_num = 2:
+get π = 3.942840746054519, avarage time used = 2.501500 ms
+N = 1000000, thread_num = 4:
+get π = 3.588179828738770, avarage time used = 2.158250 ms
+N = 1000000, thread_num = 8:
+get π = 3.377757114912790, avarage time used = 2.626500 ms
+N = 1000000, thread_num = 16:
+get π = 3.263072930579265, avarage time used = 2.314000 ms
+N = 1000000, thread_num = 32:
+get π = 3.203205099773984, avarage time used = 2.267125 ms
+N = 1000000, thread_num = 64:
+get π = 3.172619811662286, avarage time used = 2.205000 ms
+N = 10000000, thread_num = 1:
+get π = 4.430769230769231, avarage time used = 3.002000 ms
+N = 10000000, thread_num = 2:
+get π = 3.942840746054519, avarage time used = 2.500500 ms
+N = 10000000, thread_num = 4:
+get π = 3.588179828738770, avarage time used = 2.501500 ms
+N = 10000000, thread_num = 8:
+get π = 3.377757114912790, avarage time used = 2.376875 ms
+N = 10000000, thread_num = 16:
+get π = 3.263072930579265, avarage time used = 2.313938 ms
+N = 10000000, thread_num = 32:
+get π = 3.203205099773984, avarage time used = 2.314031 ms
+N = 10000000, thread_num = 64:
+get π = 3.172619811662286, avarage time used = 2.166062 ms
